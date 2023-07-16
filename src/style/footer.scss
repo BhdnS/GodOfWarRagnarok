@@ -1,0 +1,81 @@
+@import './color.scss';
+
+.footer {
+	position: relative;
+	margin-top: 197px;
+
+	&_container {
+		max-width: 904px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&_bck {
+		position: absolute;
+		right: 200px;
+		bottom: 0px;
+		z-index: -1;
+		opacity: 0.2;
+	}
+
+	&_box {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&_list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+
+	&_item {
+		font-size: 1.6rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $navBtn;
+	}
+
+	&_lang {
+		color: $clrTtl;
+		font-size: 1.4rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&_en {
+		color: $navBtn;
+	}
+
+	&_para {
+		font-size: 1.4rem;
+		text-align: center;
+		font-weight: 400;
+		color: $clrBcgBtnCard;
+		margin-top: 50px;
+	}
+
+	&_logo {
+		margin-top: 38px;
+	}
+
+	&_data {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media (max-width: 600px) {
+	
+	.footer {
+
+		&_lang {
+			display: none;
+		}
+
+	}
+
+}

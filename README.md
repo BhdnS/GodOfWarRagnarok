@@ -1,3 +1,3 @@
-# GodOfWarRagnarok
+God Of War Ragnarok
 
-[link](https://bhdns.github.io/GodOfWarRagnarok/dist/index.html)
+[GodOfWarRagnarok](https://bhdns.github.io/GodOfWarRagnarok/dist/index.html)

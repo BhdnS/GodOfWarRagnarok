@@ -1,4 +1,4 @@
-export class Video {
+export default class Video {
   constructor(params) {
     this.title = params.title;
     this.btn = params.btn;
@@ -6,7 +6,7 @@ export class Video {
   }
 
   playVideo() {
-    this.btn.addEventListener('click', (e) => {
+    this.btn.addEventListener('click', () => {
       this.btn.classList.add('display_none');
       this.title.classList.add('display_none');
       this.video.play();
@@ -14,10 +14,10 @@ export class Video {
   }
 
   stopVideo() {
-    this.video.addEventListener('click', (e) => {
+    this.video.addEventListener('click', () => {
       this.btn.classList.remove('display_none');
       this.title.classList.remove('display_none');
-      this.video.pause();  
-    })
+      this.video.pause();
+    });
   }
 }

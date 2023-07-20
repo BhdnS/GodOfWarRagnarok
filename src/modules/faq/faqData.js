@@ -1,4 +1,4 @@
-import { Faq } from './Faq'
+import Faq from './Faq';
 
 const faqData = new Faq({
   faq: document.querySelector('#faq'),
@@ -8,6 +8,6 @@ const faqData = new Faq({
   faqTxtTwo: document.querySelector('#faqTxtTwo'),
   iconOne: document.querySelector('#iconOne'),
   iconTwo: document.querySelector('#iconTwo'),
-})
+});
 
 faqData.click();

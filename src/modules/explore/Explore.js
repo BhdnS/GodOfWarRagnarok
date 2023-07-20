@@ -1,18 +1,18 @@
-export class Explore {
-	constructor(params) {
-		this.exploreOne = params.exploreOne;
-		this.exploreListOne = params.exploreListOne;
-		this.exploreTwo = params.exploreTwo;
-		this.exploreListTwo = params.exploreListTwo;
+export default class Explore {
+  constructor(params) {
+    this.exploreOne = params.exploreOne;
+    this.exploreListOne = params.exploreListOne;
+    this.exploreTwo = params.exploreTwo;
+    this.exploreListTwo = params.exploreListTwo;
     this.minimum = params.minimum;
     this.recommended = params.recommended;
     this.standard = params.standard;
     this.limited = params.limited;
     this.explorePrice = params.explorePrice;
     this.changePrice = params.changePrice;
-	}
+  }
 
-	clickOne() {
+  clickOne() {
     this.exploreOne.addEventListener('change', () => {
       if (this.exploreOne.classList.contains('minimum')) {
         this.exploreOne.classList.remove('minimum');
@@ -21,7 +21,7 @@ export class Explore {
         this.minimum.classList.add('check_dark');
         this.recommended.classList.remove('check_dark');
         this.recommended.classList.add('check_white');
-        this.exploreListOne.innerHTML = `										
+        this.exploreListOne.innerHTML = `
         <li class="explore_flex__box-list"><span class="list_blue">CPU</span>: Intel i7-4500 (4 core 4.3 GHz)</li>
         <li class="explore_flex__box-list"><span class="list_blue">RAM</span>: 16 GB</li>
         <li class="explore_flex__box-list"><span class="list_blue">OS</span>: Windows 11 64-bit</li>
@@ -30,15 +30,14 @@ export class Explore {
         <li class="explore_flex__box-list"><span class="list_blue">VERTEX SHADER</span>: 5.1</li>
         <li class="explore_flex__box-list"><span class="list_blue">FREE DISK SPACE</span>: 100 GB</li>
         <li class="explore_flex__box-list"><span class="list_blue">DEDICATED VIDEO RAM</span>: 16 GB</li>`;
-      } 
-      else if (this.exploreOne.classList.contains('recommended')) {
+      } else if (this.exploreOne.classList.contains('recommended')) {
         this.exploreOne.classList.add('minimum');
         this.exploreOne.classList.remove('recommended');
         this.minimum.classList.add('check_white');
-        this.minimum.classList.remove('check_dark')
+        this.minimum.classList.remove('check_dark');
         this.recommended.classList.add('check_dark');
         this.recommended.classList.remove('check_white');
-        this.exploreListOne.innerHTML = `										
+        this.exploreListOne.innerHTML = `
         <li class="explore_flex__box-list"><span class="list_blue">CPU</span>: Intel i5-2500k (4 core 3.3 GHz)</li>
         <li class="explore_flex__box-list"><span class="list_blue">RAM</span>: 8 GB</li>
         <li class="explore_flex__box-list"><span class="list_blue">OS</span>: Windows 10 64-bit</li>
@@ -46,10 +45,10 @@ export class Explore {
         <li class="explore_flex__box-list"><span class="list_blue">PIXEL SHADER</span>: 5.1</li>
         <li class="explore_flex__box-list"><span class="list_blue">VERTEX SHADER</span>: 5.1</li>
         <li class="explore_flex__box-list"><span class="list_blue">FREE DISK SPACE</span>: 70 GB</li>
-        <li class="explore_flex__box-list"><span class="list_blue">DEDICATED VIDEO RAM</span>: 4 GB</li>`
+        <li class="explore_flex__box-list"><span class="list_blue">DEDICATED VIDEO RAM</span>: 4 GB</li>`;
       }
-    })
-	}
+    });
+  }
 
   clickTwo() {
     this.exploreTwo.addEventListener('change', () => {
@@ -66,11 +65,10 @@ export class Explore {
         <li class="explore_flex__box-list"><span class="list_blue">Publisher</span>: Sony Interactive Entertainment Europe</li>
         <li class="explore_flex__box-list"><span class="list_blue">Species</span>: Action, Adventure</li>
         <li class="explore_flex__box-list"><span class="list_blue">Voice</span>: English, Polish, Russian, Chez, Italia</li>
-        <li class="explore_flex__box-list"><span class="list_blue">Display languages</span>: English, Dutch, Polish, Russian, Turkish</li>`
-        this.changePrice.dataset.price = '35.99$'
-        this.explorePrice.textContent = '35.99$'
-      }
-      else if (this.exploreTwo.classList.contains('limited')) {
+        <li class="explore_flex__box-list"><span class="list_blue">Display languages</span>: English, Dutch, Polish, Russian, Turkish</li>`;
+        this.changePrice.dataset.price = '35.99$';
+        this.explorePrice.textContent = '35.99$';
+      } else if (this.exploreTwo.classList.contains('limited')) {
         this.exploreTwo.classList.add('standard');
         this.exploreTwo.classList.remove('limited');
         this.standard.classList.add('check_white');
@@ -83,10 +81,10 @@ export class Explore {
         <li class="explore_flex__box-list"><span class="list_blue">Publisher</span>: Sony Interactive Entertainment Europe</li>
         <li class="explore_flex__box-list"><span class="list_blue">Species</span>: Action, Adventure</li>
         <li class="explore_flex__box-list"><span class="list_blue">Voice</span>: English, Polish, Russian</li>
-        <li class="explore_flex__box-list"><span class="list_blue">Display languages</span>: English, Dutch, Polish, Russian, Turkish</li>`
-        this.changePrice.dataset.price = '19.99$'
-        this.explorePrice.textContent = '19.99$'
+        <li class="explore_flex__box-list"><span class="list_blue">Display languages</span>: English, Dutch, Polish, Russian, Turkish</li>`;
+        this.changePrice.dataset.price = '19.99$';
+        this.explorePrice.textContent = '19.99$';
       }
-    })
+    });
   }
 }

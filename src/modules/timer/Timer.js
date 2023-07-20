@@ -1,9 +1,9 @@
-export class Timer {
-	constructor(params) {
-		this.days = params.days;
-		this.hours = params.hours;
-		this.minutes = params.minutes;
-	}
+export default class Timer {
+  constructor(params) {
+    this.days = params.days;
+    this.hours = params.hours;
+    this.minutes = params.minutes;
+  }
 
   startTimer(startDate) {
     const countdownStartDate = new Date(startDate).getTime();
@@ -25,5 +25,4 @@ export class Timer {
   formatTime(time) {
     return time < 10 ? `0${time}` : time;
   }
-
 }

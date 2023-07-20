@@ -1,4 +1,4 @@
-export class Slider {
+export default class Slider {
   constructor(params) {
     this.left = params.left;
     this.right = params.right;
@@ -12,17 +12,17 @@ export class Slider {
     this.totalSlides = this.slides.length;
   }
 
-	clickLeft() {
-		this.left.addEventListener('click', () => {
-			this.showPrevSlide();
-		});
-	}
+  clickLeft() {
+    this.left.addEventListener('click', () => {
+      this.showPrevSlide();
+    });
+  }
 
-	clickRight() {
-		this.right.addEventListener('click', () => {
-			this.showNextSlide();
-		});
-	}
+  clickRight() {
+    this.right.addEventListener('click', () => {
+      this.showNextSlide();
+    });
+  }
 
   showSlide(index) {
     this.slides.forEach((slide, i) => {

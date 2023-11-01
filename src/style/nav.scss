@@ -1,0 +1,137 @@
+@import './color.scss';
+
+.nav {
+	padding-top: 36px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	&_menu {
+		position: fixed;
+		display: flex;
+		align-items: center;
+		z-index: 5;
+		top: 30px;
+	}
+
+	&_btn {
+		display: flex;
+		flex-direction: column;
+		max-width: 25px;
+		margin-right: 50px;
+		cursor: pointer;
+		transition-duration: 0.5s;
+	}
+
+	&_btn:active {
+		transform: rotate(90deg);
+		transition-duration: 0.5s;
+	}
+
+	&_btn-long {
+		display: block;
+		width: 25px;
+		height: 2px;
+		background-color: white;
+	}
+
+
+	&_btn-short {
+		display: block;
+		width: 13px;
+		height: 2px;
+		background-color: white;
+		margin: 5px 0;
+	}
+
+	&_links {
+		font-size: 1.4rem;
+		display: flex;
+		align-items: center;
+		gap: 31px;
+	}
+
+	&_link {
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $navBtn;
+		transition-duration: 0.5s;
+	}
+
+	&_link__select {
+		transition-duration: 0.5s;
+		font-weight: 700;
+		color: $clrBcgBtnCard;
+		background-color: transparent;
+	}
+
+	&_link__select-option {
+		background-color: transparent;
+	}
+}
+
+
+.nav_timer {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	position: absolute;
+	right: 0;
+
+	&__values {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	&__value {
+		color: $clrTtlTxt;
+		font-size: 4rem;
+		font-weight: 700;
+
+	}
+}
+.info {
+	color: $clrBcgBtnCard;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.hover-nav:hover {
+	cursor: pointer;
+	color: $clrBcgTtlBtn;
+	transition-duration: 0.5s;
+}
+
+@media (max-width: 1000px) {
+
+	.nav {
+
+		&_menu {
+			flex-direction: column;
+			margin-left: 30px;
+		}
+
+		&_links {
+			padding-top: 30px;
+			flex-direction: column;
+			gap: 30px;
+			display: none;
+		}
+
+		&_link {
+			color: white;
+		}
+
+		&_link__select {
+			color: white;
+		}
+
+	}
+
+}

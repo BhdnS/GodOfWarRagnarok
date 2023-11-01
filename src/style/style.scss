@@ -1,0 +1,96 @@
+@import './color.scss';
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: $bcgBody;
+	font-family: Rubik, Roboto, sans-serif;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.container {
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+}
+
+.title {
+	font-size: 4rem;
+	font-weight: 600;
+	line-height: normal;
+	color: $clrTtl;
+}
+
+.btn-blue {
+	border-radius: 6px;
+	background-color: $clrBcgTtlBtn;
+	text-transform: uppercase;
+	color: $clrTtl;
+	transition-duration: 0.5s;
+}
+
+.btn-blue:hover {
+	transition-duration: 0.5s;
+	background-color: blue;
+}
+
+.list-text {
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: $clrBcgBtnCard;
+}
+
+.card-title {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: $clrTtl;
+}
+
+.card-subtitle {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: $clrTtlTxt;
+}
+
+.price {
+	font-size: 1.9rem;
+	font-weight: 700;
+	color: $clrTtl;
+}
+
+.text-blue {
+	color: $clrBcgTtlBtn;
+}
+.text-red {
+	color: $clrSpanTxt;
+}
+
+.btn {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	transition-duration: 0.5s;
+	background-color: rgb(241, 123, 21);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: $clrTtlTxt;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $clrBcgTtlBtn;
+  border-radius: 50px;
+}

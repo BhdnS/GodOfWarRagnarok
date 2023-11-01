@@ -1,0 +1,61 @@
+@import './color.scss';
+
+.about {
+	position: relative;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&_watch {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 5rem;
+		font-weight: 500;
+		line-height: 39px;
+		color: $clrTtl;
+		z-index: 1;
+		margin-right: -23%;
+	}
+
+	&__title {
+		padding-top: 140px;
+		text-align: center;
+	}
+
+	&_play {
+		transition-duration: 0.5s;
+		color: $clrTtl;
+		background-color: $clrBcgBtnPlay;
+		padding: 9px 26px;
+		border-radius: 6px;
+		position: absolute;
+		z-index: 1;
+		margin-top: 140px;
+	}
+
+	&__video {
+		margin-top: 32px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 561px) {
+
+	.about {
+
+		&_watch {
+			display: none;
+		}
+
+		&_play {
+			top: 70%;
+			right: 40%;
+		}
+
+	}
+
+}

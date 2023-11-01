@@ -1,9 +1,9 @@
 export default class Validation {
-  constructor(params) {
-    this.cvv = params.cvv;
-    this.cardNumber = params.cardNumber;
-    this.userName = params.userName;
-    this.cardDate = params.cardDate;
+  constructor() {
+    this.cvv = document.querySelector('#cvv');
+    this.cardNumber = document.querySelector('#cardNumber');
+    this.userName = document.querySelector('#userName');
+    this.cardDate = document.querySelector('#cardDate');
   }
 
   validationCardCvv() {

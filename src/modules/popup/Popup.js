@@ -1,10 +1,10 @@
 export default class Popup {
-  constructor(params) {
-    this.buttons = params.buttons;
-    this.popupPrice = params.popupPrice;
-    this.popup = params.popup;
-    this.closePopup = params.closePopup;
-    this.body = params.body;
+  constructor() {
+    this.buttons = document.querySelectorAll('.click');
+    this.popupPrice = document.querySelector('#popupPrice');
+    this.popup = document.querySelector('#popup');
+    this.closePopup = document.querySelector('#closePopup');
+    this.body = document.querySelector('body');
   }
 
   buyClick() {

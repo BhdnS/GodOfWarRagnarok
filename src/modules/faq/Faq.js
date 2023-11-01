@@ -1,12 +1,12 @@
 export default class Faq {
-  constructor(params) {
-    this.faq = params.faq;
-    this.faqBtnOne = params.faqBtnOne;
-    this.faqTxtOne = params.faqTxtOne;
-    this.faqBtnTwo = params.faqBtnTwo;
-    this.faqTxtTwo = params.faqTxtTwo;
-    this.iconOne = params.iconOne;
-    this.iconTwo = params.iconTwo;
+  constructor() {
+    this.faq = document.querySelector('#faq');
+    this.faqBtnOne = document.querySelector('#faqBtnOne');
+    this.faqTxtOne = document.querySelector('#faqTxtOne');
+    this.faqBtnTwo = document.querySelector('#faqBtnTwo');
+    this.faqTxtTwo = document.querySelector('#faqTxtTwo');
+    this.iconOne = document.querySelector('#iconOne');
+    this.iconTwo = document.querySelector('#iconTwo');
   }
 
   click() {

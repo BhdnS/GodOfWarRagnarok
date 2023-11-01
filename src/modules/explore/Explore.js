@@ -1,15 +1,15 @@
 export default class Explore {
-  constructor(params) {
-    this.exploreOne = params.exploreOne;
-    this.exploreListOne = params.exploreListOne;
-    this.exploreTwo = params.exploreTwo;
-    this.exploreListTwo = params.exploreListTwo;
-    this.minimum = params.minimum;
-    this.recommended = params.recommended;
-    this.standard = params.standard;
-    this.limited = params.limited;
-    this.explorePrice = params.explorePrice;
-    this.changePrice = params.changePrice;
+  constructor() {
+    this.exploreOne = document.querySelector('#exploreOne');
+    this.exploreListOne = document.querySelector('#exploreListOne');
+    this.exploreTwo = document.querySelector('#exploreTwo');
+    this.exploreListTwo = document.querySelector('#exploreListTwo');
+    this.minimum = document.querySelector('#minimum');
+    this.recommended = document.querySelector('#recommended');
+    this.standard = document.querySelector('#standard');
+    this.limited = document.querySelector('#limited');
+    this.explorePrice = document.querySelector('#explorePrice');
+    this.changePrice = document.querySelector('#changePrice');
   }
 
   clickOne() {

@@ -1,11 +1,11 @@
 export default class Slider {
-  constructor(params) {
-    this.left = params.left;
-    this.right = params.right;
-    this.slider = params.slider;
-    this.slideOne = params.slideOne;
-    this.slideTwo = params.slideTwo;
-    this.slideThree = params.slideThree;
+  constructor() {
+    this.left = document.querySelector('#left');
+    this.right = document.querySelector('#right');
+    this.slider = document.querySelector('#slider');
+    this.slideOne = document.querySelector('#slideOne');
+    this.slideTwo = document.querySelector('#slideTwo');
+    this.slideThree = document.querySelector('#slideThree');
 
     this.slides = [this.slideOne, this.slideTwo, this.slideThree];
     this.currentIndex = 0;

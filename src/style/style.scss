@@ -16,6 +16,7 @@ body {
 .container {
 	max-width: 1210px;
 	margin: 0 auto;
+	padding: 0 10px 0 10px;
 }
 
 .title {
@@ -79,4 +80,17 @@ body {
 .btn:hover {
 	transition-duration: 0.5s;
 	background-color: rgb(241, 123, 21);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: $clrTtlTxt;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $clrBcgTtlBtn;
+  border-radius: 50px;
 }

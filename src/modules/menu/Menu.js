@@ -1,7 +1,7 @@
 export default class Menu {
-  constructor(params) {
-    this.menu = params.menu;
-    this.menuItem = params.menuItem;
+  constructor() {
+    this.menu = document.querySelector('#menu');
+    this.menuItem = document.querySelector('#menuItem');
   }
 
   scroll() {

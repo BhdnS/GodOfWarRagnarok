@@ -1,8 +1,8 @@
 export default class Video {
-  constructor(params) {
-    this.title = params.title;
-    this.btn = params.btn;
-    this.video = params.video;
+  constructor() {
+    this.title = document.querySelector('#videoTitle');
+    this.btn = document.querySelector('#videoBtn');
+    this.video = document.querySelector('#video');
   }
 
   playVideo() {

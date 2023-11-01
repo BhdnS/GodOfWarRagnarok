@@ -1,8 +1,8 @@
 export default class Timer {
-  constructor(params) {
-    this.days = params.days;
-    this.hours = params.hours;
-    this.minutes = params.minutes;
+  constructor() {
+    this.days = document.querySelector('#days');
+    this.hours = document.querySelector('#hours');
+    this.minutes = document.querySelector('#minutes');
   }
 
   startTimer(startDate) {
